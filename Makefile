@@ -28,7 +28,7 @@ init: ## First-time setup — git remote, initial commit
 		echo "Remote $(REMOTE) already set"; \
 	fi
 	@if [ -z "$$(git log --oneline -1 2>/dev/null)" ]; then \
-		git add -A && git commit -m "Initial commit — $(PLUGIN_NAME) plugin"; \
+		git add -A && git commit -m "chore: initial commit"; \
 		echo "Initial commit created"; \
 	fi
 
@@ -150,8 +150,8 @@ publish: ## Bump version, commit, tag, push to GitHub
 	@sed -i 's/"version": *"[^"]*"/"version": "$(VERSION)"/' $(PLUGIN_JSON)
 	@# Stage, commit, tag, push
 	@git add -A
-	@git commit -m "Release v$(VERSION)" || echo "Nothing to commit"
-	@git tag -a "v$(VERSION)" -m "Release v$(VERSION)"
+	@git commit -m "chore(release): v$(VERSION)" || echo "Nothing to commit"
+	@git tag -a "v$(VERSION)" -m "chore(release): v$(VERSION)"
 	@git push $(REMOTE) $(BRANCH)
 	@git push $(REMOTE) "v$(VERSION)"
 	@echo ""
