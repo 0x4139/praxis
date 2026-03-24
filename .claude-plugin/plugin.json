@@ -1,0 +1,20 @@
+{
+  "name": "praxis",
+  "description": "Production-grade agents and skills for Go, TypeScript, PostgreSQL, Docker, API design, market research, and investor workflows",
+  "version": "1.0.0",
+  "author": {
+    "name": "0x4139"
+  },
+  "homepage": "https://github.com/0x4139/praxis",
+  "repository": "https://github.com/0x4139/praxis",
+  "license": "MIT",
+  "keywords": [
+    "go",
+    "typescript",
+    "postgres",
+    "docker",
+    "api",
+    "agents",
+    "skills"
+  ]
+}
