@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "0x4139",
+  "description": "Pragmatic development toolkit — coding conventions, review agents, and workflow hooks that evolve through daily practice",
+  "owner": {
+    "name": "0x4139"
+  },
+  "plugins": [
+    {
+      "name": "praxis",
+      "description": "Pragmatic development toolkit — coding conventions, review agents, and workflow hooks that evolve through daily practice",
+      "source": ".",
+      "category": "development",
+      "homepage": "https://github.com/0x4139/praxis"
+    }
+  ]
+}
