@@ -83,3 +83,9 @@ Before delivering:
 - confirm the voice matches the supplied examples
 - ensure every section adds new information
 - check formatting for the intended platform
+
+## Related Skills
+
+- `social-content` — Platform-native social media posts and repurposing
+- `market-research` — Research to inform content angles
+- `investor-materials` — Investor-facing documents
