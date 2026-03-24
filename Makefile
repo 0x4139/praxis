@@ -6,7 +6,7 @@ CLAUDE_DIR  := $(HOME)/.claude
 SKILLS_LINK := $(CLAUDE_DIR)/skills/$(PLUGIN_NAME)
 AGENTS_DIR  := $(CLAUDE_DIR)/agents
 REMOTE      := origin
-BRANCH      := main
+BRANCH      := master
 
 # ──────────────────────────────────────────────
 # Help
