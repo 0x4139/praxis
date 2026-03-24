@@ -2,21 +2,7 @@
 
 **Dev toolkit built through practice, not theory.**
 
-A [Claude Code](https://docs.anthropic.com/en/docs/claude-code) plugin — 13 agents and 21 skills for Go, TypeScript, PostgreSQL, Docker, API design, content, and fundraising workflows.
-
-## Why "Praxis"
-
-From Ancient Greek — **πρᾶξις** (*prâxis*). It means "action" or "practice," specifically the kind of doing where you learn by doing.
-
-Aristotle distinguished three types of knowledge:
-
-- **Theoria** — pure contemplation, knowing for the sake of knowing. Math, philosophy, cosmology.
-- **Techne** — craft knowledge, knowing how to make things. Building, medicine, art.
-- **Praxis** — knowledge that comes from engaged action. You act, reflect on the result, adjust, and act again. The knowledge *is* the practice.
-
-The key distinction from techne: techne produces an external product (a house, a sculpture). Praxis transforms the practitioner themselves. The goal isn't an artifact — it's becoming better at the thing through doing it.
-
-This isn't a static template collection. It's a toolkit that evolves because you use it, notice what's missing, and refine it. The skills get better because you practice with them.
+A [Claude Code](https://docs.anthropic.com/en/docs/claude-code) plugin — agents and skills for the full journey from writing code to shipping product.
 
 ## Install
 
@@ -31,7 +17,11 @@ Or for local development:
 claude --plugin-dir /path/to/praxis
 ```
 
-## Agents
+## What's Inside
+
+**Agents** are specialized subprocesses that Claude dispatches autonomously — think of them as expert reviewers that activate when relevant. **Skills** are reusable knowledge that agents (or you) can invoke — conventions, patterns, and workflows captured as structured documents.
+
+### Agents
 
 | Agent | Purpose |
 |-------|---------|
@@ -49,9 +39,9 @@ claude --plugin-dir /path/to/praxis
 | `typescript` | Type safety, async correctness, and Node/web patterns |
 | `writing` | Technical and product writing — architecture docs, memos, plans |
 
-## Skills
+### Skills
 
-### Code & Infrastructure
+#### Code & Infrastructure
 
 | Skill | Type | Purpose |
 |-------|------|---------|
@@ -70,7 +60,7 @@ claude --plugin-dir /path/to/praxis
 | `design-system` | ref | Design tokens, visual consistency, UI auditing |
 | `conventional-commits` | ref | Structured commit messages with SemVer correlation |
 
-### Content & Business
+#### Content & Business
 
 | Skill | Type | Purpose |
 |-------|------|---------|
@@ -85,20 +75,6 @@ claude --plugin-dir /path/to/praxis
 **ref** = reference skill (loaded automatically by agents when relevant)
 **cmd** = user-invocable skill (call directly via `/praxis:skill-name`)
 
-## Architecture
-
-How Claude Code loads and invokes plugins, agents, and skills:
-
-<p align="center">
-  <img src="assets/claude_code_architecture_layers.svg" alt="Claude Code Architecture Layers" width="700" />
-</p>
-
-How a user request flows through the runtime to agents and skills:
-
-<p align="center">
-  <img src="assets/claude_code_runtime_invocation_flow.svg" alt="Claude Code Runtime Invocation Flow" width="700" />
-</p>
-
 ## Development
 
 ```bash
@@ -108,6 +84,39 @@ make list          # Show all agents and skills with descriptions
 make install       # Symlink for local testing
 make release       # Validate + bump version + tag + push
 ```
+
+## Why "Praxis"
+
+From Ancient Greek — **πρᾶξις** (*prâxis*). It means "action" or "practice," specifically the kind of doing where you learn by doing.
+
+Aristotle distinguished three types of knowledge:
+
+- **Theoria** — pure contemplation, knowing for the sake of knowing. Math, philosophy, cosmology.
+- **Techne** — craft knowledge, knowing how to make things. Building, medicine, art.
+- **Praxis** — knowledge that comes from engaged action. You act, reflect on the result, adjust, and act again. The knowledge *is* the practice.
+
+The key distinction from techne: techne produces an external product (a house, a sculpture). Praxis transforms the practitioner themselves. The goal isn't an artifact — it's becoming better at the thing through doing it.
+
+This isn't a static template collection. It's a toolkit that evolves because you use it, notice what's missing, and refine it. The skills get better because you practice with them.
+
+<details>
+<summary><strong>Architecture</strong> — how Claude Code loads plugins, agents, and skills</summary>
+
+<br>
+
+<p align="center">
+  <img src="assets/claude_code_architecture_layers.svg" alt="Claude Code Architecture Layers" width="700" />
+</p>
+
+<p align="center">
+  <img src="assets/claude_code_runtime_invocation_flow.svg" alt="Claude Code Runtime Invocation Flow" width="700" />
+</p>
+
+</details>
+
+## Contributing
+
+Open an issue or PR. If you're adding a skill, run `make validate` before pushing.
 
 ## License
 
