@@ -63,6 +63,7 @@ If the user wants a web-native deck, pair this skill with `slides`.
 - include traction and proof points early
 - make the ask precise
 - keep claims easy to verify
+- for detailed memo structure, see `investor-memo`
 
 ### Financial Model
 Include:
@@ -97,6 +98,7 @@ Before delivering:
 
 ## Related Skills
 
+- `investor-memo` — Full investment memo structure and template
 - `go-to-market` — GTM strategy from problem statement to launch plan
 - `investor-outreach` — Cold emails, warm intros, follow-ups
 - `market-research` — Competitive analysis and market sizing
