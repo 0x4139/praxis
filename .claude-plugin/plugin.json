@@ -1,7 +1,7 @@
 {
   "name": "praxis",
   "description": "Pragmatic development toolkit — coding conventions, review agents, and workflow hooks that evolve through daily practice",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": {
     "name": "0x4139"
   },
