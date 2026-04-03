@@ -10,6 +10,7 @@
   "license": "MIT",
   "keywords": [
     "go",
+    "python",
     "typescript",
     "postgres",
     "docker",
