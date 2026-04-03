@@ -94,3 +94,9 @@ Before delivering:
 - assumptions are visible, not buried
 - the story is clear without hype language
 - the final asset is defensible in a partner meeting
+
+## Related Skills
+
+- `go-to-market` — GTM strategy from problem statement to launch plan
+- `investor-outreach` — Cold emails, warm intros, follow-ups
+- `market-research` — Competitive analysis and market sizing

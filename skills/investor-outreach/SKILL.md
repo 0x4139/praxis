@@ -77,5 +77,6 @@ Before delivering:
 
 ## Related Skills
 
+- `go-to-market` — GTM strategy from problem statement to launch plan
 - `investor-materials` — Pitch decks, memos, financial models
 - `market-research` — Fund diligence, competitive analysis
