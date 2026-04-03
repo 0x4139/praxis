@@ -36,7 +36,24 @@ Two to three sentences max. An investor should know what you do, why it matters,
 **Example:**
 > Acme is a developer tool that automates database migrations for teams running PostgreSQL at scale. 400 teams actively using the product, $180K ARR growing 25% MoM. Raising $3M on a SAFE to hire engineering and launch enterprise tier.
 
-### 2. Team
+### 2. Company Overview
+
+Brief context on who you are before diving into the team and problem.
+
+| Field | What to include |
+|-------|----------------|
+| Founded | Year, city |
+| Stage | Pre-seed / Seed / Series A |
+| Mission | One sentence — what you exist to do |
+| Key milestones | 3-5 bullets: launch dates, partnerships, funding history, product-market fit signals |
+| Legal structure | Entity type, incorporation state/country |
+
+**Rules:**
+- Keep this to half a page max — it's context, not the pitch
+- Milestones should show momentum, not a timeline of existence
+- If you've raised before, state the amount, date, and lead investor
+
+### 3. Team
 
 Investors fund teams first, especially at early stages.
 
@@ -53,7 +70,7 @@ Investors fund teams first, especially at early stages.
 - Technical depth if it's a technical product
 - Complementary skills between co-founders
 
-### 3. Problem
+### 4. Problem
 
 State the problem precisely. Quantify the pain.
 
@@ -72,7 +89,7 @@ Cost of the problem: [time, money, risk — quantified]
 - Quantify: "costs teams 8 hours/week" beats "wastes a lot of time"
 - The problem should feel urgent, not theoretical
 
-### 4. Solution
+### 5. Solution
 
 Show how your product solves the problem. Be specific.
 
@@ -81,7 +98,7 @@ Show how your product solves the problem. Be specific.
 - Explain your insight: what do you understand about this problem that others don't?
 - Keep it to one page — the product demo does the heavy lifting
 
-### 5. Market
+### 6. Market
 
 Size the opportunity. Investors need to believe this can be big enough.
 
@@ -97,7 +114,7 @@ Size the opportunity. Investors need to believe this can be big enough.
 - Show the market is growing — cite a source
 - If the market is small today, explain why it's expanding (new regulation, tech shift, behavior change)
 
-### 6. Business Model
+### 7. Business Model
 
 How does money flow?
 
@@ -112,7 +129,7 @@ How does money flow?
 
 **If pre-revenue:** describe the planned model and comparable pricing from similar products. Acknowledge it's unvalidated.
 
-### 7. Traction
+### 8. Traction
 
 The single most important section for investors. Show momentum.
 
@@ -130,7 +147,7 @@ The single most important section for investors. Show momentum.
 - Cohort retention is stronger than vanity user counts
 - If growth is lumpy, explain why honestly
 
-### 8. Competition
+### 9. Competition
 
 Every company has competition. Saying "no competitors" is a red flag.
 
@@ -148,7 +165,7 @@ Every company has competition. Saying "no competitors" is a red flag.
 - Your advantage should be structural (network effects, data moats, distribution), not just "better product"
 - If a big company could build this, explain why they won't or why you'd win anyway
 
-### 9. Go-To-Market
+### 10. Go-To-Market
 
 How do you acquire and retain customers?
 
@@ -159,7 +176,7 @@ How do you acquire and retain customers?
 
 Keep this concise — link to the full GTM strategy document if you have one.
 
-### 10. Financials
+### 11. Financials
 
 Show you understand the economics of your business.
 
@@ -175,7 +192,7 @@ Show you understand the economics of your business.
 - "We'll be at $10M ARR in 18 months" needs a clear bottoms-up path
 - Bear / base / bull cases show maturity
 
-### 11. The Ask
+### 12. The Ask
 
 What you're raising and what it buys.
 
@@ -196,7 +213,7 @@ What you're raising and what it buys.
  5% — Operations
 ```
 
-### 12. Risks and Mitigations
+### 13. Risks and Mitigations
 
 Naming your risks builds credibility. Hiding them doesn't.
 
@@ -212,7 +229,7 @@ Naming your risks builds credibility. Hiding them doesn't.
 - Competition risk — what if [big company] builds this?
 - Funding risk — what happens if this round takes longer?
 
-### 13. Investment Thesis (VC-Internal)
+### 14. Investment Thesis (VC-Internal)
 
 This section is what the deal champion writes to convince their partners. If you're a founder, write this section as if you were the VC advocating for your deal.
 
