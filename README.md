@@ -17,6 +17,17 @@ Or for local development:
 claude --plugin-dir /path/to/praxis
 ```
 
+## Update
+
+Installed plugins auto-update in the background, but only when the `version` in `plugin.json` changes — every release bumps it. To update manually:
+
+```bash
+claude plugin marketplace update 0x4139   # refresh the marketplace catalog
+claude plugin update praxis@0x4139        # update the installed plugin
+```
+
+Run `/reload-plugins` inside Claude Code to activate the update in the current session; new sessions pick it up automatically.
+
 ## What's Inside
 
 **Agents** are specialized subprocesses that Claude dispatches autonomously — think of them as expert reviewers that activate when relevant. **Skills** are reusable knowledge that agents (or you) can invoke — conventions, patterns, and workflows captured as structured documents.
