@@ -85,6 +85,7 @@ Run `/reload-plugins` inside Claude Code to activate the update in the current s
 | `investor-outreach` | cmd | Cold emails, warm intros, follow-ups |
 | `slides` | ref | HTML presentations from scratch or PPT conversion |
 | `blueprint` | cmd | Project scaffolding and architecture blueprints |
+| `ideation` | cmd | Parallel divergent ideation with isolated subagent branches |
 | `adhd` | cmd | ADHD-friendly output mode — action-first, bounded steps, visible state |
 
 **ref** = reference skill (loaded automatically by agents when relevant)
