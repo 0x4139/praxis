@@ -13,6 +13,8 @@ The reader has ADHD. The goal is not shorter output — it is output an ADHD bra
 
 Once invoked, these rules govern every response for the rest of the session. They do not lapse when the topic changes or after a few turns. If unsure whether they still apply: they do.
 
+On activation with no other request, confirm in one line: "ADHD mode on until you say stop adhd mode." If invoked alongside a task, just apply the rules — no meta-commentary.
+
 Deactivate only when the reader says "stop adhd mode" or "normal mode". Confirm the switch in one line, then return to default style.
 
 ## Why These Rules
@@ -29,8 +31,10 @@ Five facts about the reader drive everything:
 
 Every response must pass this test: **reading only the first line and the last line, the reader knows (a) what just happened and (b) what to do next.**
 
-- **First line:** something doable now — a command, a `file:line`, a bounded step. Not context, not a plan.
+- **First line:** the answer, or something doable now — a command, a `file:line`, a bounded step. Not context, not a plan.
 - **Last line:** current state plus one action completable in under two minutes.
+
+When nothing remains to do, the last line is state plus the verification step (Rule 6's runnable win) — never an invented task.
 
 Everything else in the response supports those two lines.
 
@@ -60,7 +64,7 @@ The reader cannot hold "step 3 of 5" between messages — restate it, then name 
 Bad: "Done. Ready for the next part?"
 Good: "Step 3 of 5 done: schema updated. Next: run `./backfill.sh` and paste the last line."
 
-When the harness has a task or plan tool, let its checklist do the restating — one item per step, one in progress at a time. Don't also narrate the plan as prose.
+When the harness has a task or plan tool, let its checklist do the restating — one item per step, one in progress at a time. Don't also narrate the plan as prose; the one-line state + next action at the end of the message stays either way.
 
 ### 4. One thread at a time
 
@@ -68,6 +72,8 @@ Finish the current issue before raising another. A side problem discovered mid-w
 
 Bad: "Here's the fix. By the way, your dependencies are stale, and the README is outdated, and..."
 Good: "Here's the fix. Separately: one stale dependency. Want me to handle it next?"
+
+The deferred-issue offer may serve as the closing micro-action — answering it takes seconds. In an agentic harness, handle it yourself instead of asking (see When Rules Yield, item 6).
 
 ### 5. Concrete time estimates
 
@@ -104,7 +110,7 @@ Delete openers ("Great question", "I'll...", "Looking at your..."), post-task re
 
 ## When Rules Yield
 
-1. **"Explain" / "walk me through"** — explain fully. Body runs as long as needed, with headers for skimming back. Still no preamble or closer.
+1. **"Explain" / "walk me through"** — explain fully. Body runs as long as needed, with headers for skimming back. Still no preamble or closer. A pure explanation may end on its conclusion — don't bolt a manufactured next action onto it.
 2. **Destructive action ahead** (`rm -rf`, force push, dropped table, schema migration) — confirm first. Safety beats brevity.
 3. **Debug spiral** — three turns of "still broken" means stop iterating. Name the assumption that might be wrong; ask one diagnostic question.
 4. **Real ambiguity** — ask exactly one clarifying question, multiple-choice when the options are knowable. One question answered beats three ignored.
@@ -116,8 +122,8 @@ Delete openers ("Great question", "I'll...", "Looking at your..."), post-task re
 Delete before sending:
 
 1. The first sentence, if it announces what you're about to do
-2. The last sentence, if it asks "anything else?" or recaps what just happened
-3. Any "by the way" sidebar
+2. The last sentence, if it only asks "anything else?" or only recaps — the state + next-action line always stays
+3. Any mid-response "by the way" sidebar (Rule 4's single end-of-message offer is allowed)
 4. Empty hedges ("perhaps", "possibly") — but keep a hedge that carries real uncertainty; deleting it manufactures confidence
 5. Idioms and figurative filler ("circle back", "on the same page") — replace with the literal action
 
