@@ -67,10 +67,14 @@ claude --plugin-dir /path/to/praxis
 | `article-writing` | cmd | Blog posts, guides, tutorials, newsletters |
 | `social-content` | cmd | X, LinkedIn, TikTok, YouTube, content repurposing |
 | `market-research` | cmd | Competitive analysis, TAM/SAM/SOM, fund diligence |
+| `go-to-market` | cmd | GTM strategy from problem statement to launch plan |
+| `product-positioning` | cmd | Differentiation diagnosis and positioning moves (Purple Cow) |
+| `investor-memo` | cmd | Investment memos — founder-facing and VC-internal |
 | `investor-materials` | cmd | Pitch decks, memos, financial models |
 | `investor-outreach` | cmd | Cold emails, warm intros, follow-ups |
 | `slides` | ref | HTML presentations from scratch or PPT conversion |
 | `blueprint` | cmd | Project scaffolding and architecture blueprints |
+| `adhd` | cmd | ADHD-friendly output mode — action-first, bounded steps, visible state |
 
 **ref** = reference skill (loaded automatically by agents when relevant)
 **cmd** = user-invocable skill (call directly via `/praxis:skill-name`)

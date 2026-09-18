@@ -228,6 +228,7 @@ When the strategy is complete, produce a single document with:
 ## Related Skills
 
 - `market-research` — Competitive analysis and market sizing
+- `product-positioning` — Differentiation diagnosis; sharpens Step 4 positioning
 - `investor-materials` — Pitch decks and fundraising documents
 - `investor-outreach` — Investor communications
 - `social-content` — Platform-native content creation
