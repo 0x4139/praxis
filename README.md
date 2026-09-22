@@ -71,6 +71,12 @@ Run `/reload-plugins` inside Claude Code to activate the update in the current s
 | `design-system` | ref | Design tokens, visual consistency, UI auditing |
 | `conventional-commits` | ref | Structured commit messages with SemVer correlation |
 
+#### Project Management
+
+| Skill | Type | Purpose |
+|-------|------|---------|
+| `project-management` | cmd | Specs → implementation plans → GitHub issues, with sub-issues, milestones, dependencies |
+
 #### Content & Business
 
 | Skill | Type | Purpose |
