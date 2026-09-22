@@ -76,6 +76,7 @@ Run `/reload-plugins` inside Claude Code to activate the update in the current s
 | Skill | Type | Purpose |
 |-------|------|---------|
 | `article-writing` | cmd | Blog posts, guides, tutorials, newsletters |
+| `academic-writing` | cmd | Research paper sections, flow, claim-evidence, reviewer self-review |
 | `social-content` | cmd | X, LinkedIn, TikTok, YouTube, content repurposing |
 | `market-research` | cmd | Competitive analysis, TAM/SAM/SOM, fund diligence |
 | `go-to-market` | cmd | GTM strategy from problem statement to launch plan |
