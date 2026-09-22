@@ -3,5 +3,6 @@
 *.swo
 *~
 .env
-.env.*.playwright-mcp/
+.env.*
+.playwright-mcp/
 .playwright-mcp/
