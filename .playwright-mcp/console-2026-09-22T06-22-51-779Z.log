@@ -1,0 +1,2 @@
+[     207ms] [WARNING] GetShoppingCartSummary returned null. @ https://static.nc-img.com/uilayout2/app.2fd9a4bcce32afdaf9f9.js:0
+[     225ms] [WARNING] Use `shouldComponentUpdate` in an `observer` based component breaks the behavior of `observer` and might lead to unexpected results. Manually implementing `sCU` should not be needed when using mobx-react. @ https://static.nc-img.com/uilayout2/libs/vendors_5feae52b1e038b28d546.js:0
