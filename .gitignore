@@ -4,3 +4,4 @@
 *~
 .env
 .env.*.playwright-mcp/
+.playwright-mcp/
