@@ -148,8 +148,8 @@ publish: ## Bump version, commit, tag, push to GitHub
 	@echo "Publishing version: $(VERSION)"
 	@# Update plugin.json
 	@sed -i 's/"version": *"[^"]*"/"version": "$(VERSION)"/' $(PLUGIN_JSON)
-	@# Stage, commit, tag, push
-	@git add -A
+	@# Stage only the version bump — never sweep unrelated files into a release
+	@git add $(PLUGIN_JSON)
 	@git commit -m "chore(release): v$(VERSION)" || echo "Nothing to commit"
 	@git tag -a "v$(VERSION)" -m "chore(release): v$(VERSION)"
 	@git push $(REMOTE) $(BRANCH)
