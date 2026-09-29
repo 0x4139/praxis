@@ -13,7 +13,7 @@ A spec defines **what** must be true — requirements, constraints, interfaces, 
 ## Output
 
 - Location: `spec/` directory at the repo root (create it if missing)
-- Name: `spec-[purpose]-[description].md` where purpose is one of `schema|tool|data|infrastructure|process|architecture|design` — e.g. `spec-data-user-events.md`
+- Name: `spec-[purpose]-[description].md` where purpose is one of `feature|schema|tool|data|infrastructure|process|architecture|design` — e.g. `spec-data-user-events.md`
 - Format: the template in `spec-template.md` — all sections filled or explicitly marked not applicable
 
 ## Writing Rules
