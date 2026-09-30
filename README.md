@@ -51,8 +51,10 @@ Three failure modes show up in almost every agent-assisted project. Each has a f
 | **specify** | Turns the conversation into a spec file. Does **not** interview again — it synthesizes what you already said. |
 | **slice** | Breaks the spec into vertical-slice tickets with native blocked-by edges, published in dependency order, grouped into milestones when phases emerge. Quizzes you on granularity before publishing anything. |
 | **triage** | Sorts existing issues into `ready-for-agent` / `ready-for-human` / `needs-info` / `wontfix`, verifying claims and writing agent briefs as it goes. |
+| **execute** | Works tickets off the frontier (blockers all closed) in an epic worktree — solo by default, parallel agents on request. |
+| **track** | Standup, status, what's next, what's blocked — computed live from GitHub's dependency graph, no local state files. |
 
-Intended flow: **idea dump → elicit → specify → slice → triage**. Enter at any stage — arrive with a finished spec and it goes straight to slicing.
+Intended flow: **idea dump → elicit → specify → slice → triage → execute**, with **track** answering "where are we?" at any point. Enter at any stage — arrive with a finished spec and it goes straight to slicing.
 
 ### #2: The work only exists in chat
 
@@ -72,7 +74,7 @@ Intended flow: **spec → implementation plan → epic + sub-issues**. `distill`
 
 Skills compose into chains. These are the ones this repo is built around:
 
-- **Idea → backlog:** [`distill`](./skills/distill/SKILL.md) (elicit → specify → slice → triage)
+- **Idea → shipped:** [`distill`](./skills/distill/SKILL.md) (elicit → specify → slice → triage → execute, with track for status)
 - **Spec → tracked execution:** [`project-management`](./skills/project-management/SKILL.md) (spec → plan → issues), then [`conventional-commits`](./skills/conventional-commits/SKILL.md) while you build
 - **Huge or multi-session work:** [`ideation`](./skills/ideation/SKILL.md) to diverge, [`distill`](./skills/distill/SKILL.md) to converge, [`blueprint`](./skills/blueprint/SKILL.md) for per-step context briefs across sessions
 - **Fundraising:** [`market-research`](./skills/market-research/SKILL.md) → [`product-positioning`](./skills/product-positioning/SKILL.md) → [`go-to-market`](./skills/go-to-market/SKILL.md) → [`investor-memo`](./skills/investor-memo/SKILL.md) → [`investor-materials`](./skills/investor-materials/SKILL.md) → [`investor-outreach`](./skills/investor-outreach/SKILL.md)
@@ -90,7 +92,7 @@ Everything splits on one axis: **who invokes it**.
 
 | Skill | What it does for you |
 |-------|----------------------|
-| [`distill`](./skills/distill/SKILL.md) | Idea dump → elicit → specify → slice → triage (see above) |
+| [`distill`](./skills/distill/SKILL.md) | Idea dump → elicit → specify → slice → triage → execute → track (see above) |
 | [`project-management`](./skills/project-management/SKILL.md) | Formal specs, phased implementation plans, GitHub issues with sub-issues/dependencies/milestones |
 | [`blueprint`](./skills/blueprint/SKILL.md) | Multi-session construction plans — each step carries a self-contained context brief a fresh agent can execute cold |
 | [`ideation`](./skills/ideation/SKILL.md) | Parallel divergent ideation — isolated subagent branches under different cognitive frames, then score/cluster/commit |
@@ -185,7 +187,7 @@ This isn't a static template collection. It's a toolkit that evolves because you
 
 ## Credits
 
-The `distill` pipeline adapts ideas from [Matt Pocock's skills](https://github.com/mattpocock/skills) (MIT) — frontier-round grilling, synthesis-without-reinterview, tracer-bullet tickets, and triage states. Parts of `project-management` adapt templates from [github/awesome-copilot](https://github.com/github/awesome-copilot) (MIT).
+The `distill` pipeline adapts ideas from [Matt Pocock's skills](https://github.com/mattpocock/skills) (MIT) — frontier-round grilling, synthesis-without-reinterview, tracer-bullet tickets, and triage states — and its execute/track stages adapt the delivery phases of [automazeio/ccpm](https://github.com/automazeio/ccpm) (MIT), rebuilt on GitHub's native dependency graph instead of local state files. Parts of `project-management` adapt templates from [github/awesome-copilot](https://github.com/github/awesome-copilot) (MIT).
 
 ## Contributing
 

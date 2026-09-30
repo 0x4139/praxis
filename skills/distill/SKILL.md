@@ -1,6 +1,6 @@
 ---
 name: distill
-description: Guided pipeline that turns a messy idea dump into executable, ordered work through four stages — elicit, specify, slice, triage. Use when the user has a raw brain dump, a pile of tangled ideas, or a vague feature wish and wants it refined into a spec and trackable issues; when they ask to stress-test a plan with questions; when a spec or conversation needs breaking into ordered tickets; or when existing issues need triage. Triggers on "distill", "brain dump", "break this down", "stress-test my idea", "turn this into tickets", "triage the backlog".
+description: Guided pipeline that turns a messy idea dump into executable, ordered, tracked work through six stages — elicit, specify, slice, triage, execute, track. Use when the user has a raw brain dump, a pile of tangled ideas, or a vague feature wish and wants it refined into a spec and trackable issues; when they ask to stress-test a plan with questions; when a spec or conversation needs breaking into ordered tickets; when existing issues need triage; when they want to work the backlog or an epic; or when they ask for status, a standup, what's next, or what's blocked. Triggers on "distill", "brain dump", "break this down", "stress-test my idea", "turn this into tickets", "triage the backlog", "start on the epic", "standup", "what's next", "what's blocked".
 ---
 
 # Distill
@@ -15,10 +15,14 @@ Raw ideas become executable work through staged refinement, the way crude feed b
 | **Specify** | The elicitation conversation | A spec file — synthesis only, no re-interview | `specify.md` |
 | **Slice** | A spec (or a clear enough conversation) | Vertical-slice tickets with blocking edges, grouped into milestones | `slice.md` |
 | **Triage** | Existing issues | Each issue in exactly one state: ready-for-agent, ready-for-human, needs-info, wontfix | `triage.md` |
+| **Execute** | A sliced epic | Tickets worked off the frontier (solo by default, parallel agents on request) in an epic worktree | `execute.md` |
+| **Track** | Issues on the tracker | Standup, status, what's next, what's blocked — computed live from GitHub | `track.md` |
+
+Elicit through triage refine; execute and track operate. Track is cross-cutting — it can run at any point after tickets exist.
 
 ## Conducting
 
-1. **Locate the user.** What exists already? A raw dump and open questions → elicit. Decisions settled in conversation → specify. A spec file or approved decisions → slice. Issues on the tracker → triage. Invoked bare, show the pipeline map and confirm the entry point; invoked with content, name the stage you're entering in one line and start it.
+1. **Locate the user.** What exists already? A raw dump and open questions → elicit. Decisions settled in conversation → specify. A spec file or approved decisions → slice. Issues needing states → triage. A sliced epic to work → execute. A status question → track. Invoked bare, show the pipeline map and confirm the entry point; invoked with content, name the stage you're entering in one line and start it.
 2. **Run one stage at a time.** Read only that stage's file (plus the files it explicitly references). Never run two stages in one breath — each stage ends with the user's confirmation of its artifact.
 3. **Hand off explicitly.** Close every stage by naming the artifact produced and offering the next stage: "Spec written to `spec/…`. Next: slice it into tickets?"
 4. **Respect entry points.** A user arriving with a finished spec doesn't need elicitation; a user asking only for triage gets only triage. Never force earlier stages — but if slicing exposes unsettled decisions, drop back to a short elicitation round rather than guessing.

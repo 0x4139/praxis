@@ -66,4 +66,4 @@ No file paths or code snippets in tickets — they go stale. Same single excepti
 
 ## Exit
 
-Hand off: the backlog now exists in dependency order. Offer **triage** (`triage.md`) to label states, or execution — the frontier (tickets with no unfinished blockers) is ready to start.
+Hand off: the backlog now exists in dependency order. Offer **triage** (`triage.md`) to label states, or **execute** (`execute.md`) — the frontier (tickets with no unfinished blockers) is ready to start.
