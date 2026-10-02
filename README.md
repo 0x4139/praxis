@@ -79,6 +79,7 @@ Skills compose into chains. These are the ones this repo is built around:
 - **Huge or multi-session work:** [`ideation`](./skills/ideation/SKILL.md) to diverge, [`distill`](./skills/distill/SKILL.md) to converge, [`blueprint`](./skills/blueprint/SKILL.md) for per-step context briefs across sessions
 - **Fundraising:** [`market-research`](./skills/market-research/SKILL.md) → [`product-positioning`](./skills/product-positioning/SKILL.md) → [`go-to-market`](./skills/go-to-market/SKILL.md) → [`investor-memo`](./skills/investor-memo/SKILL.md) → [`investor-materials`](./skills/investor-materials/SKILL.md) → [`investor-outreach`](./skills/investor-outreach/SKILL.md)
 - **Content:** [`article-writing`](./skills/article-writing/SKILL.md) or [`academic-writing`](./skills/academic-writing/SKILL.md) → [`social-content`](./skills/social-content/SKILL.md) to repurpose
+- **Media & Motion:** [`product-explainer-video`](./skills/product-explainer-video/SKILL.md) (position → script → storyboard → produce → variants) and [`slides`](./skills/slides/SKILL.md) for presentations
 
 ## Reference
 
@@ -107,6 +108,7 @@ Everything splits on one axis: **who invokes it**.
 | [`investor-memo`](./skills/investor-memo/SKILL.md) | Investment memos — founder-facing and VC-internal formats |
 | [`investor-materials`](./skills/investor-materials/SKILL.md) | Pitch decks, one-pagers, financial models that stay internally consistent |
 | [`investor-outreach`](./skills/investor-outreach/SKILL.md) | Cold emails, warm intro blurbs, follow-ups, update emails |
+| [`product-explainer-video`](./skills/product-explainer-video/SKILL.md) | 30–90s explainer: position → script → storyboard → produce (HTML/Remotion) → social variants |
 
 ### Reference Skills (ref)
 
@@ -187,7 +189,7 @@ This isn't a static template collection. It's a toolkit that evolves because you
 
 ## Credits
 
-The `distill` pipeline adapts ideas from [Matt Pocock's skills](https://github.com/mattpocock/skills) (MIT) — frontier-round grilling, synthesis-without-reinterview, tracer-bullet tickets, and triage states — and its execute/track stages adapt the delivery phases of [automazeio/ccpm](https://github.com/automazeio/ccpm) (MIT), rebuilt on GitHub's native dependency graph instead of local state files. Parts of `project-management` adapt templates from [github/awesome-copilot](https://github.com/github/awesome-copilot) (MIT).
+The `distill` pipeline adapts ideas from [Matt Pocock's skills](https://github.com/mattpocock/skills) (MIT) — frontier-round grilling, synthesis-without-reinterview, tracer-bullet tickets, and triage states — and its execute/track stages adapt the delivery phases of [automazeio/ccpm](https://github.com/automazeio/ccpm) (MIT), rebuilt on GitHub's native dependency graph instead of local state files. The `product-explainer-video` pipeline adapts the five-beat scriptwriting framework from [gtmagents/gtm-agents](https://github.com/gtmagents/gtm-agents) (Apache-2.0) and vendors the production workflow and verify scripts from [iart-ai/explainer-video-skills](https://github.com/iart-ai/explainer-video-skills) (MIT), routing to the other [iart-ai motion packs](https://github.com/iart-ai/motion-skills) when installed. Parts of `project-management` adapt templates from [github/awesome-copilot](https://github.com/github/awesome-copilot) (MIT).
 
 ## Contributing
 
