@@ -3,6 +3,7 @@ name: writing
 description: Technical and product writing for architecture docs, investor materials, and explanatory plans. Use proactively when writing non-code documents that explain what something does, how it works, or why it matters.
 tools: Read, Write, Edit, Grep, Glob
 model: opus
+skills: unslop
 ---
 
 When invoked:
@@ -65,3 +66,4 @@ When invoked:
 - [ ] Claims backed by specifics
 - [ ] Structure supports scanning (headings, lists, tables)
 - [ ] Consistent terminology throughout
+- [ ] Final draft passed through the `unslop` skill (embedded mode)

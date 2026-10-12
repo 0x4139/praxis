@@ -78,7 +78,7 @@ Skills compose into chains. These are the ones this repo is built around:
 - **Spec → tracked execution:** [`project-management`](./skills/project-management/SKILL.md) (spec → plan → issues), then [`conventional-commits`](./skills/conventional-commits/SKILL.md) while you build
 - **Huge or multi-session work:** [`ideation`](./skills/ideation/SKILL.md) to diverge, [`distill`](./skills/distill/SKILL.md) to converge, [`blueprint`](./skills/blueprint/SKILL.md) for per-step context briefs across sessions
 - **Fundraising:** [`market-research`](./skills/market-research/SKILL.md) → [`product-positioning`](./skills/product-positioning/SKILL.md) → [`go-to-market`](./skills/go-to-market/SKILL.md) → [`investor-memo`](./skills/investor-memo/SKILL.md) → [`investor-materials`](./skills/investor-materials/SKILL.md) → [`investor-outreach`](./skills/investor-outreach/SKILL.md)
-- **Content:** [`article-writing`](./skills/article-writing/SKILL.md) or [`academic-writing`](./skills/academic-writing/SKILL.md) → [`social-content`](./skills/social-content/SKILL.md) to repurpose
+- **Content:** [`article-writing`](./skills/article-writing/SKILL.md) or [`academic-writing`](./skills/academic-writing/SKILL.md) → [`social-content`](./skills/social-content/SKILL.md) to repurpose, with [`unslop`](./skills/unslop/SKILL.md) as the final pass
 - **Media & Motion:** [`product-explainer-video`](./skills/product-explainer-video/SKILL.md) (position → script → storyboard → produce → variants) and [`slides`](./skills/slides/SKILL.md) for presentations
 
 ## Reference
@@ -102,6 +102,7 @@ Everything splits on one axis: **who invokes it**.
 | [`article-writing`](./skills/article-writing/SKILL.md) | Blog posts, guides, tutorials, newsletters in a voice derived from your examples |
 | [`academic-writing`](./skills/academic-writing/SKILL.md) | Research paper sections, paragraph flow, claim-evidence mapping, reviewer self-review |
 | [`social-content`](./skills/social-content/SKILL.md) | Platform-native posts for X/LinkedIn/TikTok/YouTube, repurposed from long-form |
+| [`unslop`](./skills/unslop/SKILL.md) | Strips AI tells from any prose (staging, triads, dashes, inflation, bold-label lists, chat residue) without losing a fact |
 | [`market-research`](./skills/market-research/SKILL.md) | Competitive analysis, TAM/SAM/SOM, fund diligence with source attribution |
 | [`go-to-market`](./skills/go-to-market/SKILL.md) | GTM strategy from problem statement to launch plan |
 | [`product-positioning`](./skills/product-positioning/SKILL.md) | Differentiation diagnosis and one concrete positioning move (Purple Cow) |

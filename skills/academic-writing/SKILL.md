@@ -22,6 +22,7 @@ Write papers a reviewer can follow and can't easily reject. Structure carries th
 4. **Reverse-outline** each finished section (below).
 5. **Map claims to evidence.** Every major claim in Abstract/Introduction gets a row: `Claim | Evidence | Status: supported / needs evidence`. Unsupported claims get evidence, get weakened, or get cut.
 6. **Adversarial review.** Before submission, run `review.md` — the five rejection dimensions and the reviewer checklist.
+7. **Unslop.** Run the `unslop` skill over the finished prose and return only the final text. Leave equations, LaTeX, citations, and quoted results untouched, and keep the hedges the evidence requires.
 
 For a flow check alone, jump to Reverse Outlining below; for a review-only request, go straight to `review.md` — the story questions still apply when claims fail.
 
@@ -80,3 +81,4 @@ Methodology adapted from Prof. Peng Sida's open research-writing notes (github.c
 - `article-writing` — Non-academic long-form: blog posts, guides, newsletters
 - `slides` — Turning the paper into a talk
 - `market-research` — Source-attributed research for non-academic contexts
+- `unslop` — Final pass that strips AI tells without losing facts
