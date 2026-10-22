@@ -1,6 +1,7 @@
 ---
 name: security
 description: Vulnerability detection, secrets scanning, and OWASP Top 10 analysis. Use proactively after writing code that handles user input, authentication, API endpoints, or sensitive data.
+skills: security-audit
 tools: Read, Grep, Glob, Bash
 disallowedTools: Write, Edit
 model: sonnet
@@ -23,7 +24,7 @@ When invoked:
 7. **XSS** — Output escaped? CSP set? Framework auto-escaping?
 8. **Insecure Deserialization** — User input deserialized safely?
 9. **Known Vulnerabilities** — Dependencies up to date? Audit clean?
-10. **Insufficient Logging** — Security events logged? Alerts configured?
+10. **Secrets in Logs** — Credentials, tokens, or PII written to logs or error responses?
 
 ## Patterns to Flag
 
@@ -37,9 +38,13 @@ When invoked:
 | Plaintext password comparison | CRITICAL | Use `bcrypt.compare()` |
 | No auth check on route | CRITICAL | Add authentication middleware |
 | Balance check without lock | CRITICAL | Use `FOR UPDATE` in transaction |
-| No rate limiting | HIGH | Add rate limiting middleware |
 
 ## False Positives
+
+The `security-audit` skill's `exclusions.md` is the shared authority on what is not a
+finding — rate limiting, DoS, log spoofing, absent hardening, outdated dependencies, and
+the rest. Apply it here too, so a quick pass and a full audit never disagree about what
+counts.
 
 Verify context before flagging:
 - `.env.example` files (not actual secrets)
@@ -52,3 +57,12 @@ Verify context before flagging:
 - **Approve**: No CRITICAL or HIGH issues
 - **Warning**: MEDIUM issues only
 - **Block**: CRITICAL or HIGH issues found
+
+## When to Escalate
+
+This is the fast pass: it reports what it can see in freshly written code. It does not run
+an adversarial panel, so its findings carry no verdict beyond one reader's judgment.
+
+Hand off to the `security-audit` skill when the answer needs to be trusted rather than
+quick — an audit of a whole codebase, a finding worth a real verify-or-refute decision, a
+threat model, or anything touching agent tooling and MCP surfaces.
